@@ -19,7 +19,7 @@ def test_predict_returns_prediction_and_confidence():
     r = client.post("/predict", json=PAYLOAD)
     assert r.status_code == 200
     body = r.json()
-    assert body["prediction"] in (0, 1)
+    assert body["prediction"] in (5, 6)
     assert 0.5 <= body["confidence"] <= 1.0
 
 
