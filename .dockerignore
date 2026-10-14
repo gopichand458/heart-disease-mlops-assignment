@@ -1,0 +1,8 @@
+.venv
+.git
+mlruns
+mlflow.db
+notebooks
+screenshots
+data
+tests
